@@ -1,5 +1,8 @@
+'use client';
+
 import Link from "next/link";
 import Image from "next/image";
+import { FaGripLines } from "react-icons/fa";
 
 import logoImg from '@/assets/logo.png';
 import classes from './main-header.module.css';
@@ -8,7 +11,12 @@ import MainHeaderBackground from './main-header-background';
 import NavLink from './nav-link';
 
 export default function MainHeader(){
-    return (
+  
+  function openBackdropHandler(){
+    console.log('Hello world')
+  }
+  
+  return (
     <>
     <MainHeaderBackground/>
     <header className={classes.header}>
@@ -27,6 +35,9 @@ export default function MainHeader(){
           </li>
         </ul>
       </nav>
+        <div className={classes.backdrop} onClick={openBackdropHandler}>
+          <FaGripLines/>         
+        </div>
     </header>
     </>
     );
