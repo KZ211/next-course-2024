@@ -43,9 +43,8 @@
     object-fit: contain;
     filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
   }
-
   .backdrop{
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     width: 100px;
@@ -57,7 +56,12 @@
     height: 1px;
     color: black;
   }
-@media screen and (max-width: 700px){
+
+  .text-center{
+    text-align: center;
+  }
+
+@media screen and (max-width: 1000px){
   .nav ul {
     list-style: none;
     margin: 0;
@@ -84,5 +88,18 @@
     height: 3rem;
     object-fit: contain;
     filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
+  }
+  .backdrop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 25px;
+  }
+
+  .line{
+    width: 100px;
+    height: 1px;
+    color: black;
   }
 }

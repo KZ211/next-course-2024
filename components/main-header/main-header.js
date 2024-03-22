@@ -12,7 +12,7 @@ import NavLink from './nav-link';
 
 export default function MainHeader(){
   
-  function openBackdropHandler(){
+  function openBackdropHandler(event){
     console.log('Hello world')
   }
   
@@ -28,7 +28,7 @@ export default function MainHeader(){
       <nav className={classes.nav}>
         <ul>
           <li>
-            <NavLink href='/meals'>Browser Meals</NavLink>
+            <NavLink href='/meals' className="text-center">Browser Meals</NavLink>
           </li>
           <li>
             <NavLink href='/community'>Foodies Community</NavLink>
