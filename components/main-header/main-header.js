@@ -9,16 +9,21 @@ import classes from './main-header.module.css';
 
 import MainHeaderBackground from './main-header-background';
 import NavLink from './nav-link';
+import Backdrop from "../backdrop/backdrop";
+import { useState } from "react";
 
 export default function MainHeader(){
   
+  const[currentActivate, setActivate] = useState(false);
+
   function openBackdropHandler(event){
-    console.log('Hello world')
+    {currentActivate == true ? setActivate(false): setActivate(true)}
   }
   
   return (
     <>
     <MainHeaderBackground/>
+    {currentActivate == true ? <Backdrop closeBackdrop={openBackdropHandler}/> : ''}
     <header className={classes.header}>
       <Link className={classes.logo} href='/'>
         <Image src={logoImg.src} alt='A plate with food on it' width="1024" height="1024" priority/>

@@ -1,0 +1,41 @@
+.backdropT{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal{
+    position:fixed;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+}
+
+.backdrop{
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    z-index: 999;
+    background-color: #424242;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.backdrop li{
+    margin: 10px 0px;
+}
+
+.link{
+    text-decoration: none;
+    color: #fff;
+}
+
+@media screen and (max-width: 531px){
+    .backdrop{
+        font-size: 1.5rem;
+    }
+}
