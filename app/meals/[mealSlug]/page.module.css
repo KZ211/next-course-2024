@@ -5,6 +5,13 @@
     margin: auto;
     max-width: 80rem;
   }
+
+  @media screen and (max-width:1000px){
+    .header {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
   
   .image {
     position: relative;
