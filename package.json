@@ -11,12 +11,17 @@
   "dependencies": {
     "animate.css": "^4.1.1",
     "better-sqlite3": "^9.4.3",
-    "next": "14.0.3",
-    "react": "^18",
+    "next": "^14.0.3",
+    "react": "^18.2.0",
     "react-dom": "^18",
+    "slugify": "^1.6.6",
+    "xss": "^1.0.14",
     "react-icons": "^5.0.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.24.3",
+    "@babel/preset-env": "^7.24.3",
+    "@babel/preset-react": "^7.24.1",
     "eslint": "^8",
     "eslint-config-next": "14.0.3"
   }
