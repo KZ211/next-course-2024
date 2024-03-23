@@ -1,7 +1,7 @@
 import Link from "next/link";
 import classes from "./backdrop.module.css";
 
-export default function({closeBackdrop, isActivate}){
+export default function Backdrop({closeBackdrop, isActivate}){
     return <div className={classes.backdropT}>
         <div className={classes.modal} onClick={closeBackdrop}/>
     <ul className={`${classes.backdrop} ${isActivate == true? 'animate__animated animate__fadeInRight' : ''}`}>
