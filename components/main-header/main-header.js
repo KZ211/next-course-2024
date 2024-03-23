@@ -6,6 +6,7 @@ import { FaGripLines } from "react-icons/fa";
 
 import logoImg from '@/assets/logo.png';
 import classes from './main-header.module.css';
+import 'animate.css';
 
 import MainHeaderBackground from './main-header-background';
 import NavLink from './nav-link';
@@ -23,7 +24,7 @@ export default function MainHeader(){
   return (
     <>
     <MainHeaderBackground/>
-    {currentActivate == true ? <Backdrop closeBackdrop={openBackdropHandler}/> : ''}
+    {currentActivate == true ? <Backdrop closeBackdrop={openBackdropHandler} isActivate={currentActivate}/> : ''}
     <header className={classes.header}>
       <Link className={classes.logo} href='/'>
         <Image src={logoImg.src} alt='A plate with food on it' width="1024" height="1024" priority/>
@@ -40,7 +41,7 @@ export default function MainHeader(){
           </li>
         </ul>
       </nav>
-        <div className={classes.backdrop} onClick={openBackdropHandler}>
+        <div className={`${classes.backdrop} ${currentActivate == true? 'animate__animated animate__fadeOut' : ''}`} onClick={openBackdropHandler}>
           <FaGripLines/>         
         </div>
     </header>
