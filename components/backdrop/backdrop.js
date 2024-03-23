@@ -12,7 +12,7 @@ export default function Backdrop({closeBackdrop, isActivate}){
             <Link className={classes.link} onClick={closeBackdrop} href='/meals'>Share Meal</Link>
         </li>
         <li>
-            <Link className={classes.link} onClick={closeBackdrop} href='/community'>Community</Link>
+            <Link className={classes.link} onClick={closeBackdrop} href='/community'>Communityy</Link>
         </li>
     </ul>
     </div>
